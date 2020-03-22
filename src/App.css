@@ -14,16 +14,17 @@
 }
 
 .card-container {
+  height: 800px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  background-color:rgb(71, 139, 62);
+  background-color:rgb(242, 245, 241);
 }
 
 .card {
+  height: 250px;
   width: 20vw;
-  margin: 25px;
-  background-color: green;
+  margin-top: 50px;
 }
 
 a {

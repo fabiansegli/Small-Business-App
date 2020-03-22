@@ -8,8 +8,10 @@ export default {
         {
             "id": "16915865",
             "name": "Franklin Barbecue",
+            "description": "Long lines form early for brisket, pulled pork & other smoked meats at this lunch-only spot.",
             "url": "https://www.zomato.com/austin/franklin-barbecue-rosewood?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
               "address": "900 East 11th Street, Austin 78702",
+              "hour": "8am-10pm",
               "locality": "Rosewood",
               "city": "Austin",
               "city_id": 278,
@@ -20,7 +22,7 @@ export default {
               "locality_verbose": "Rosewood, Austin",
             "switch_to_order_menu": 0,
             "cuisines": "BBQ",
-            "average_cost_for_two": 35,
+            "average_cost_for_two":'$$',
             "price_range": 2,
             "currency": "$",
             "offers": [],
@@ -59,8 +61,10 @@ export default {
           
             "id": "16913120",
             "name": "Lamberts Downtown Barbecue",
+            "description": "Fancy BBQ & other meaty fare in a refurbished general store with an upstairs bar with live music.",
             "url": "https://www.zomato.com/austin/lamberts-downtown-barbecue-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
               "address": "401 W 2nd Street, Austin 78701",
+              "hour": "9am-10pm",
               "locality": "Downtown",
               "city": "Austin",
               "city_id": 278,
@@ -71,7 +75,7 @@ export default {
               "locality_verbose": "Downtown, Austin",
             "switch_to_order_menu": 0,
             "cuisines": "BBQ",
-            "average_cost_for_two": 100,
+            "average_cost_for_two": '$$$',
             "price_range": 4,
             "currency": "$",
             "offers": [],
@@ -110,8 +114,10 @@ export default {
           
             "id": "16913976",
             "name": "Stubb's Bar-B-Q",
+            "description": "Beer, brisket and music Downtown with a renowned Sunday gospel brunch.",
             "url": "https://www.zomato.com/austin/stubbs-bar-b-q-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
               "address": "801 Red River Street, Austin 78701",
+              "hour": "10am-10pm",
               "locality": "Downtown",
               "city": "Austin",
               "city_id": 278,
@@ -122,7 +128,7 @@ export default {
               "locality_verbose": "Downtown, Austin",
             "switch_to_order_menu": 0,
             "cuisines": "BBQ",
-            "average_cost_for_two": 35,
+            "average_cost_for_two": '$$',
             "price_range": 2,
             "currency": "$",
             "offers": [],
@@ -161,8 +167,10 @@ export default {
           
             "id": "16915533",
             "name": "La Condesa",
+            "description": "Contemporary Mexican dishes, a vast tequila selection & happy-hour deals in a sophisticated setting.",
             "url": "https://www.zomato.com/austin/la-condesa-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
               "address": "400 A W 2nd Street, Austin 78701",
+              "hour": "10am-11pm",
               "locality": "Second Street District, Downtown",
               "city": "Austin",
               "city_id": 278,
@@ -173,7 +181,7 @@ export default {
               "locality_verbose": "Second Street District, Downtown, Austin",
             "switch_to_order_menu": 0,
             "cuisines": "Mexican",
-            "average_cost_for_two": 80,
+            "average_cost_for_two": '$$$',
             "price_range": 3,
             "currency": "$",
             "offers": [],
@@ -207,7 +215,6 @@ export default {
             "is_table_reservation_supported": 0,
             "has_table_booking": 0,
             "events_url": "https://www.zomato.com/austin/la-condesa-downtown/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
-          }
-        
+          }       
       ]
   };

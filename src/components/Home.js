@@ -8,12 +8,12 @@ const Home = ( props ) => {
             {props.restaurants.map((r, idx) => (
                 <Card key={r.id} className="card">
                     <CardContent className="text-gray">
-                        <span>{r.name}</span>
+                        <span style={{ color: 'black' }}><b>{r.name}</b></span>
                         <ul>
                             <li>Address: {r["address"]}</li>
                             <li>Rating: {r["rating_text"]}</li>
                             <li>Cusine: {r["cuisines"]}</li>
-                            <li>Cost for 2: ${r["average_cost_for_two"]}</li>
+                            <li>Cost for 2: {r["average_cost_for_two"]}</li>
                         </ul>
                     </CardContent>
                     <Divider />

@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import { Container, Paper, Chip } from '@material-ui/core';
 import GoogleMapReact from "google-map-react";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
-import { Link } from 'react-router-dom'
 
 
 const Restaurant = (props) => {
@@ -29,28 +28,22 @@ const Restaurant = (props) => {
         {restaurant.id ? 
         <Container>
         <Container maxWidth="sm" className="restaurant-container">
-            <Paper className="restaurant-paper">
                 <h2>{restaurant.name}</h2>
-                {
-                    Object.keys(restaurant).map((key, idx) => {
-                        return <Chip key={idx} label={`${key}: ${restaurant[key]}`}></Chip>
-                    })
-                }
-            </Paper>
+                <h3>{restaurant.address}</h3>
+                <p>{restaurant.hour}</p>
+                <p>{restaurant.description}</p>
+                <img style={{ height: "400px", width: "550px" }} src={restaurant.featured_image}></img>
         </Container>
         <br />
         <Container style={{ height: "400px", width: "550px" }}>
             <GoogleMapReact
-                bootstrapURLKeys={{ key: process.env.REACT_APP_MAP_KEY }}
+                bootstrapURLKeys={{ key: 'AIzaSyDwdmXtYRsz1v2GXB47rJ7sHJZ__lmiMto' }}
                 center={center}
                 defaultZoom={zoom}
                 yesIWantToUseGoogleMapApiInternals
             >
                 <LocationOnIcon lat={restaurant.latitude} lng={restaurant.longitude} />
             </GoogleMapReact>
-            <Link to='/'>
-                <button>Back</button>
-            </Link>
             <br />
             </Container>
             </Container>

@@ -36,7 +36,7 @@ const Navigation = ( props ) => {
                     }
                 </ul>
             </Toolbar>
-                    <Toolbar style={{ backgroundColor: 'rgb(71, 139, 62)'}}>{props.user.loggedIn ? props.user.username : 'Logged Out'}</Toolbar>
+                    <Toolbar style={{ backgroundColor: 'rgb(71, 139, 62)', minHeight: '30px' }}>{props.user.loggedIn ? props.user.username : 'Logged Out'}</Toolbar>
                     {props.user.loggedIn ? <AddRestaurant /> : ''}
         </AppBar>
     )

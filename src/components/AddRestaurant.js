@@ -14,7 +14,7 @@ class AddRestaurant extends Component {
         address: '',
         aggregate_rating: '',
         cuisines: '',
-        average_cost_for_two: ''
+        id: ''
     }
 
     toggleDialog = () => this.setState({ open: !this.state.open })
@@ -41,7 +41,7 @@ class AddRestaurant extends Component {
                 address: '',
                 aggregate_rating: '',
                 cuisines: '',
-                average_cost_for_two: ''
+                id: ''
             })
         }
     }
@@ -50,8 +50,7 @@ class AddRestaurant extends Component {
         return (
             <Fragment>
                 <div style={{ textAlign: 'center', backgroundColor: 'rgb(71, 139, 62)' }}>
-                    <h1>Add Restaurant:</h1>
-                    <Button
+                    <Button style={{ marginBottom: '20px'}}
                         variant="contained"
                         className="add-restaurant"
                         onClick={this.toggleDialog}
@@ -91,9 +90,9 @@ class AddRestaurant extends Component {
                                     onChange={this.handleTextChange} 
                                     required />
                                 <TextField 
-                                    id="average_cost_for_two" 
-                                    placeholder="Average Cost for Two" 
-                                    value={this.state.average_cost_for_two} 
+                                    id="id" 
+                                    placeholder="id" 
+                                    value={this.state.id} 
                                     onChange={this.handleTextChange} 
                                     required />
                                 <br />
