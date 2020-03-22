@@ -48,7 +48,7 @@ const Restaurant = (props) => {
             </Container>
             </Container>
         :
-            <div>Sorry, more details coming soon!</div>
+            <div>More details coming soon!</div>
         }
     </>
   
